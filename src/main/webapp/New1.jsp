@@ -33,6 +33,7 @@
 		int i = st.executeUpdate();
 		
 		Statement st1 = con.createStatement();
+		st.executeUpdate("DELETE FROM Page WHERE uname='abc'");
 		System.out.println("execute Query");
 		ResultSet rs = st.executeQuery("select * from Page");
 	%>
